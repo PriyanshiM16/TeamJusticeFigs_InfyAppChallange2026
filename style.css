@@ -1,32 +1,194 @@
-/* =========================
-   NAVBAR
-========================= */
-.navbar {
-  background-color: #df949d;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.navbar-left img {
-  height: 35px;
+body{
+    display:flex;
+    font-family:'Patrick Hand', cursive;
+    background:#a8b9d3;
+    color:#1f1f1f;
 }
 
-.navbar-right {
-  list-style: none;
-  display: flex;
-  gap: 2em;
-  margin: 0;
-  padding: 0;
+.sidebar{
+    width:220px;
+    height:100vh;
+    background:#7f96bb;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px 15px;
 }
 
-.navbar-right a {
-  color: #6f5e4f;
-  text-decoration: none;
-  font-weight: bold;
+.logo-text{
+    color:white;
+    font-size:52px;
+    text-align:center;
+    line-height:0.9;
+    margin-bottom:30px;
 }
 
-.navbar-right a:hover {
-  color: #f7efda;
+.team-names p{
+    background:#b8c8de;
+    color:white;
+    text-align:center;
+    padding:10px;
+    border-radius:15px;
+    margin-bottom:12px;
+    font-size:20px;
+}
+
+.main-content{
+    margin-left:220px;
+    width:calc(100% - 220px);
+    padding:25px;
+}
+
+.logo-section{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.main-logo{
+    width:180px;
+    border-radius:20px;
+}
+
+.slogan-section{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.slogan-section h2{
+    color:white;
+    font-size:34px;
+}
+
+.about-section{
+    background:#c3d0e3;
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.about-section h2{
+    margin-bottom:10px;
+    color:#4f6892;
+    font-size:34px;
+}
+
+.about-section p{
+    font-size:22px;
+    line-height:1.5;
+}
+
+.iframe-section{
+    margin-bottom:35px;
+}
+
+.iframe-section h2{
+    text-align:center;
+    color:white;
+    margin-bottom:12px;
+    font-size:34px;
+}
+
+iframe{
+    width:100%;
+    height:650px;
+    border:none;
+    border-radius:20px;
+    padding:8px;
+    background:#dce5f1;
+}
+
+.team-section{
+    margin-top:20px;
+}
+
+.team-section h2{
+    text-align:center;
+    color:white;
+    font-size:38px;
+    margin-bottom:25px;
+}
+
+.team-container{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.team-box{
+    background:#c3d0e3;
+    border-radius:20px;
+    padding:18px;
+    text-align:center;
+}
+
+.team-box img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:50%;
+    margin-bottom:12px;
+}
+
+.team-box h3{
+    color:#4f6892;
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.team-box p{
+    font-size:18px;
+    line-height:1.4;
+}
+
+@media(max-width:900px){
+
+    body{
+        flex-direction:column;
+    }
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .main-content{
+        margin-left:0;
+        width:100%;
+    }
+
+    .team-container{
+        grid-template-columns:1fr 1fr;
+    }
+
+    iframe{
+        height:500px;
+    }
+}
+
+@media(max-width:600px){
+
+    .team-container{
+        grid-template-columns:1fr;
+    }
+
+    .logo-text{
+        font-size:42px;
+    }
+
+    .slogan-section h2{
+        font-size:28px;
+    }
+
+    iframe{
+        height:400px;
+    }
 }
