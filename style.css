@@ -9,14 +9,18 @@
 body{
     display:flex;
     font-family:'Patrick Hand', cursive;
-    background:#a8b9d3;
-    color:#1f1f1f;
+    background:#59718a;
+    color:#ffe9c5;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 10px #ffe9c5,
+        0 0 20px #ffd89a;
 }
 
 .sidebar{
     width:220px;
     height:100vh;
-    background:#7f96bb;
+    background:#59718a;
     position:fixed;
     left:0;
     top:0;
@@ -24,16 +28,20 @@ body{
 }
 
 .logo-text{
-    color:white;
+    color:#ffe9c5;
     font-size:52px;
     text-align:center;
     line-height:0.9;
     margin-bottom:30px;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 10px #ffe9c5,
+        0 0 20px #ffd89a;
 }
 
 .team-names p{
-    background:#b8c8de;
-    color:white;
+    background:#59718a;
+    color:#ffe9c5;
     text-align:center;
     padding:10px;
     border-radius:15px;
@@ -63,12 +71,16 @@ body{
 }
 
 .slogan-section h2{
-    color:white;
+    color:#ffe9c5;
     font-size:34px;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 10px #ffe9c5,
+        0 0 20px #ffd89a;
 }
 
 .about-section{
-    background:#c3d0e3;
+    background:#59718a;
     padding:25px;
     border-radius:20px;
     margin-bottom:30px;
@@ -76,13 +88,18 @@ body{
 
 .about-section h2{
     margin-bottom:10px;
-    color:#4f6892;
+    color:#ffe9c5;
     font-size:34px;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 10px #ffe9c5,
+        0 0 20px #ffd89a;
 }
 
 .about-section p{
     font-size:22px;
     line-height:1.5;
+    color:#ffe9c5;
 }
 
 .iframe-section{
@@ -91,9 +108,13 @@ body{
 
 .iframe-section h2{
     text-align:center;
-    color:white;
+    color:#ffe9c5;
     margin-bottom:12px;
     font-size:34px;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 10px #ffe9c5,
+        0 0 20px #ffd89a;
 }
 
 iframe{
@@ -102,7 +123,7 @@ iframe{
     border:none;
     border-radius:20px;
     padding:8px;
-    background:#dce5f1;
+    background:#59718a;
 }
 
 .team-section{
@@ -111,9 +132,13 @@ iframe{
 
 .team-section h2{
     text-align:center;
-    color:white;
+    color:#ffe9c5;
     font-size:38px;
     margin-bottom:25px;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 10px #ffe9c5,
+        0 0 20px #ffd89a;
 }
 
 .team-container{
@@ -123,7 +148,7 @@ iframe{
 }
 
 .team-box{
-    background:#c3d0e3;
+    background:#59718a;
     border-radius:20px;
     padding:18px;
     text-align:center;
@@ -138,14 +163,19 @@ iframe{
 }
 
 .team-box h3{
-    color:#4f6892;
+    color:#ffe9c5;
     font-size:28px;
     margin-bottom:8px;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 10px #ffe9c5,
+        0 0 20px #ffd89a;
 }
 
 .team-box p{
     font-size:18px;
     line-height:1.4;
+    color:#ffe9c5;
 }
 
 @media(max-width:900px){
