@@ -12,7 +12,10 @@
       margin:0;
       padding:0;
       font-family:'Patrick Hand', cursive;
-      background:#59718a;
+
+      /* lighter grey-blue background */
+      background:#7f97ad;
+
       display:flex;
       justify-content:center;
       align-items:center;
@@ -26,9 +29,31 @@
       background:#6b829c;
       border-radius:25px;
       padding:30px;
+
       box-shadow:
         0 0 10px rgba(255, 233, 197, 0.3),
         0 0 20px rgba(255, 216, 154, 0.2);
+    }
+
+    /* ================= CIRCLE IMAGE ================= */
+
+    .circle-avatar{
+      width:120px;
+      height:120px;
+      border-radius:50%;
+      overflow:hidden;
+
+      margin:0 auto 15px auto;
+
+      box-shadow:
+        0 0 10px rgba(255, 233, 197, 0.3),
+        0 0 20px rgba(255, 216, 154, 0.2);
+    }
+
+    .circle-avatar img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
     }
 
     h1{
@@ -83,37 +108,39 @@
 
   <div class="profile-card">
 
+    <!-- ✅ IMAGE CIRCLE -->
+    <div class="circle-avatar">
+      <img src="PriyanshiM.png" alt="Profile Picture">
+    </div>
+
     <h1>Your Name</h1>
 
     <div class="section">
       <h2>About Me</h2>
       <p>
-        Write a short description about yourself here — your interests,
-        personality, and goals.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Project Contribution</h2>
-      <p>
-        Explain what you did in the project — your role, what you built,
-        and how you helped your team.
+        I am currently a high school junior at Thomas A. Edison CTE High School, enrolled in the Web and App Development CTE Course, as well as game design. </br>
+      I am very passionate about app building, entrepreneurship, and creating my own business in the future. 
       </p>
     </div>
 
     <div class="section">
       <h2>Experience / Internship</h2>
-      <p>
-        Add any internships, school programs, volunteering, or tech experience here.
-      </p>
+      <ul>
+        <li>Hackathon participation (Finalist) (2024-2026) </li>
+        <li>Vice President of Girls Who Code Club (2024-2025)</li>
+        <li>Active HOSA memeber</li>
+        <li>Active National Technical Honor Society memeber</li>
+        <li>Active New York State National Science Honor Society memeber</li>
+        <li>IT and Media Intern (Industry Scholars Program)</li>
+      </ul>
     </div>
 
     <div class="section links">
       <h2>Social Links</h2>
 
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://yourportfolio.com" target="_blank">Portfolio</a>
-      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/priyanshi-malik-33b584397/?skipRedirect=true">LinkedIn𑣲⋆｡˚</a>
+      <a href="https://priyanshim16.github.io/Junior_Portfolio_PM/">Portfolio𑣲⋆｡˚</a>
+      <a href="mailto:priyanshim@nycstudents.net" target="_blank" rel="noopener">EMAIL𑣲⋆｡˚</a>
     </div>
 
   </div>
