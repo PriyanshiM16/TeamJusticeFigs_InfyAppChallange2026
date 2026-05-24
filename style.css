@@ -37,6 +37,8 @@ body{
         0 0 6px #ffd89a;
 }
 
+/* ================= SIDEBAR NAMES ================= */
+
 .team-names p{
     background:#6b829c;
     color:#ffe9c5;
@@ -49,6 +51,23 @@ body{
     text-shadow:
         0 0 5px #ffe9c5,
         0 0 10px #ffd89a;
+
+    transition:0.3s ease;
+    cursor:pointer;
+}
+
+/* SIDEBAR HOVER EFFECT */
+.team-names p:hover{
+    transform:scale(1.08);
+    background:#7a93ad;
+
+    box-shadow:
+        0 0 10px rgba(255, 233, 197, 0.4),
+        0 0 20px rgba(255, 216, 154, 0.3);
+
+    text-shadow:
+        0 0 8px #ffe9c5,
+        0 0 15px #ffd89a;
 }
 
 /* ================= MAIN CONTENT ================= */
@@ -183,6 +202,24 @@ iframe{
         0 0 2px #ffe9c5,
         0 0 6px #ffd89a;
 }
+
+/* ================= TEAM LINK HOVER ================= */
+
+.team-link{
+    color:#ffe9c5;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s ease;
+}
+
+.team-link:hover{
+    transform:scale(1.12);
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 12px #ffd89a;
+}
+
+/* ================= TEAM DESCRIPTION ================= */
 
 .team-box p{
     font-size:18px;
