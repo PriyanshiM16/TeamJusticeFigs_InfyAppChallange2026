@@ -69,6 +69,16 @@ body{
         0 0 8px #ffe9c5,
         0 0 15px #ffd89a;
 }
+.team-names p a{
+    color:#ffe9c5;
+    text-decoration:none;
+    display:block;
+}
+
+/* make whole box feel clickable */
+.team-names p{
+    cursor:pointer;
+}
 
 /* ================= MAIN CONTENT ================= */
 
