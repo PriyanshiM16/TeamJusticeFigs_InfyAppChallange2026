@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Page</title>
+
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family:'Patrick Hand', cursive;
+
+  background:#7f97ad;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+
+  color:#ffe9c5;
+}
+
+/* ================= PROFILE CARD ================= */
+
+.profile-card{
+  width:80%;
+  max-width:900px;
+  background:#6b829c;
+  border-radius:25px;
+  padding:30px;
+
+  box-shadow:
+    0 0 10px rgba(255, 233, 197, 0.3),
+    0 0 20px rgba(255, 216, 154, 0.2);
+}
+
+/* ================= CIRCLE IMAGE ================= */
+
+.circle-avatar{
+  width:250px;
+  height:250px;
+  border-radius:50%;
+  overflow:hidden;
+
+  margin:0 auto 15px auto;
+
+  box-shadow:
+    0 0 10px rgba(255, 233, 197, 0.3),
+    0 0 20px rgba(255, 216, 154, 0.2);
+}
+
+.circle-avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+
+/* ================= TEXT ================= */
+
+h1{
+  text-align:center;
+  font-size:50px;
+  margin-bottom:10px;
+
+  text-shadow:
+    0 0 5px #ffe9c5,
+    0 0 12px #ffd89a;
+}
+
+h2{
+  margin-top:20px;
+  font-size:28px;
+
+  text-shadow:
+    0 0 3px #ffe9c5,
+    0 0 8px #ffd89a;
+}
+
+p{
+  font-size:20px;
+  line-height:1.5;
+}
+
+/* ================= SECTIONS ================= */
+
+.section{
+  margin-top:15px;
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+/* ================= LINKS ================= */
+
+.links a{
+  display:inline-block;
+  margin-right:15px;
+  color:#ffe9c5;
+  text-decoration:none;
+  font-size:20px;
+  transition:0.3s ease;
+}
+
+.links a:hover{
+  transform:scale(1.1);
+
+  text-shadow:
+    0 0 5px #ffe9c5,
+    0 0 12px #ffd89a;
+}
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="profile-card">
+
+    <!-- ✅ IMAGE CIRCLE -->
+    <div class="circle-avatar">
+      <img src="SumiyaA.jpg" alt="Profile Picture">
+    </div>
+
+    <h1>Sumiya</h1>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>
+      Attends Thomas A. Edison CTE High School, student plans to pursue the medical field in dermatology. Skilled in various coding languages, and loves her cat.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Experience / Internship</h2>
+      <ul>
+        <li>Active HOSA memeber</li>
+        <li>Member of Guitar Club</li>
+        <li>Volunteers at a children’s hospital</li>
+        <li>Skilled in HTML, Python, and computer skills</li>
+      </ul>
+    </div>
+
+    <div class="section links">
+      <h2>Social Links</h2>
+
+      <a href="#">LinkedIn𑣲⋆｡˚</a>
+      <a href="#">Portfolio𑣲⋆｡˚</a>
+      <!--<a href="mailto:priyanshim@nycstudents.net" target="_blank" rel="noopener">EMAIL𑣲⋆｡˚</a>-->
+    </div>
+
+  </div>
+
+</body>
+</html>
