@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+/* ================= RESET ================= */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+/* ================= BODY ================= */
 body{
     display:flex;
     font-family:'Patrick Hand', cursive;
@@ -14,7 +16,6 @@ body{
 }
 
 /* ================= SIDEBAR ================= */
-
 .sidebar{
     width:220px;
     height:100vh;
@@ -37,11 +38,9 @@ body{
         0 0 6px #ffd89a;
 }
 
-/* ================= SIDEBAR NAMES ================= */
-
+/* ================= TEAM NAME BUTTONS ================= */
 .team-names p{
     background:#6b829c;
-    color:#ffe9c5;
     text-align:center;
     padding:10px;
     border-radius:15px;
@@ -56,7 +55,7 @@ body{
     cursor:pointer;
 }
 
-/* SIDEBAR HOVER EFFECT */
+/* hover effect */
 .team-names p:hover{
     transform:scale(1.08);
     background:#7a93ad;
@@ -69,25 +68,37 @@ body{
         0 0 8px #ffe9c5,
         0 0 15px #ffd89a;
 }
-.team-names p a{
+
+/* ================= LINKS (FIX BLUE TEXT ISSUE) ================= */
+a{
     color:#ffe9c5;
     text-decoration:none;
     display:block;
 }
 
-/* make whole box feel clickable */
-.team-names p{
-    cursor:pointer;
+.team-link{
+    color:#ffe9c5;
+    text-decoration:none;
+    display:block;
+}
+
+/* hover on links */
+.team-link:hover{
+    transform:scale(1.05);
+    transition:0.3s ease;
+    text-shadow:
+        0 0 5px #ffe9c5,
+        0 0 12px #ffd89a;
 }
 
 /* ================= MAIN CONTENT ================= */
-
 .main-content{
     margin-left:220px;
     width:calc(100% - 220px);
     padding:25px;
 }
 
+/* ================= LOGO ================= */
 .logo-section{
     text-align:center;
     margin-bottom:20px;
@@ -99,14 +110,12 @@ body{
 }
 
 /* ================= SLOGAN ================= */
-
 .slogan-section{
     text-align:center;
     margin-bottom:25px;
 }
 
 .slogan-section h2{
-    color:#ffe9c5;
     font-size:34px;
 
     text-shadow:
@@ -115,7 +124,6 @@ body{
 }
 
 /* ================= ABOUT ================= */
-
 .about-section{
     background:#6b829c;
     padding:25px;
@@ -125,7 +133,6 @@ body{
 
 .about-section h2{
     margin-bottom:10px;
-    color:#ffe9c5;
     font-size:34px;
 
     text-shadow:
@@ -136,18 +143,15 @@ body{
 .about-section p{
     font-size:22px;
     line-height:1.5;
-    color:#ffe9c5;
 }
 
 /* ================= IFRAME ================= */
-
 .iframe-section{
     margin-bottom:35px;
 }
 
 .iframe-section h2{
     text-align:center;
-    color:#ffe9c5;
     margin-bottom:12px;
     font-size:34px;
 
@@ -166,14 +170,12 @@ iframe{
 }
 
 /* ================= TEAM SECTION ================= */
-
 .team-section{
     margin-top:20px;
 }
 
 .team-section h2{
     text-align:center;
-    color:#ffe9c5;
     font-size:38px;
     margin-bottom:25px;
 
@@ -204,7 +206,6 @@ iframe{
 }
 
 .team-box h3{
-    color:#ffe9c5;
     font-size:28px;
     margin-bottom:8px;
 
@@ -213,32 +214,12 @@ iframe{
         0 0 6px #ffd89a;
 }
 
-/* ================= TEAM LINK HOVER ================= */
-
-.team-link{
-    color:#ffe9c5;
-    text-decoration:none;
-    display:inline-block;
-    transition:0.3s ease;
-}
-
-.team-link:hover{
-    transform:scale(1.12);
-    text-shadow:
-        0 0 5px #ffe9c5,
-        0 0 12px #ffd89a;
-}
-
-/* ================= TEAM DESCRIPTION ================= */
-
 .team-box p{
     font-size:18px;
     line-height:1.4;
-    color:#ffe9c5;
 }
 
 /* ================= RESPONSIVE ================= */
-
 @media(max-width:900px){
 
     body{
