@@ -68,6 +68,25 @@ body{
         0 0 8px #ffe9c5,
         0 0 15px #ffd89a;
 }
+/* ================= CLICKABLE TEAM BOX LINKS ================= */
+.team-box-link{
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+
+/* make the whole card feel clickable */
+.team-box-link .team-box{
+    transition:0.3s ease;
+}
+
+/* hover effect on full card */
+.team-box-link:hover .team-box{
+    transform:scale(1.05);
+    box-shadow:
+        0 0 12px rgba(255, 233, 197, 0.4),
+        0 0 25px rgba(255, 216, 154, 0.3);
+}
 
 /* ================= LINKS (FIX BLUE TEXT ISSUE) ================= */
 a{
